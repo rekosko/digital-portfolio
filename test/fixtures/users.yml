@@ -1,0 +1,36 @@
+# == Schema Information
+# Schema version: 20110108115736
+#
+# Table name: users
+#
+#  id          :integer         not null, primary key
+#  nickname    :string(255)
+#  name        :string(255)
+#  surname     :string(255)
+#  age         :integer
+#  email       :string(255)
+#  www         :string(255)
+#  description :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nickname: MyString
+  name: MyString
+  surname: MyString
+  age: 1
+  email: MyString
+  www: MyString
+  description: MyText
+
+two:
+  nickname: MyString
+  name: MyString
+  surname: MyString
+  age: 1
+  email: MyString
+  www: MyString
+  description: MyText

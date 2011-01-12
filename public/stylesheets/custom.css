@@ -1,0 +1,360 @@
+/* 
+    Document   : custom
+    Created on : 2011-01-08, 13:47:28
+    Author     : ghoscik
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.container {
+  width: 710px;
+}
+
+body {
+  background: #1d1d1d;
+}
+
+header {
+  padding-top: 20px;
+}
+
+header img {
+  padding: 1em;
+  background: #fff;
+}
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #141414;
+  border: 2px solid #272727;
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  color: #51b4fb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+a.signup_button {
+    margin-left: auto;
+    margin-right: auto;    
+    border:none;
+    outline:none;
+    text-align: center;
+    width: 190px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    cursor:pointer;
+    clear:both;
+    padding: 4px 15px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:150%;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#439dfb;
+}
+
+a:hover.signup_button {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+i {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* header */
+
+#portfolio-header { overflow: hidden; display: inline-block; margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; min-width: 1044px; background-color: #29264d; border-bottom-style: solid; border-bottom-width: 3px; border-bottom-color: #494573; height: 91px; }
+#portfolio-header { display: block; }
+#portfolio-header div, #portfolio-header span, #portfolio-header object, #portfolio-header iframe, #portfolio-header h1, #portfolio-header h2, #portfolio-header h3, #portfolio-header h4, #portfolio-header h5, #portfolio-header h6, #portfolio-header p, #portfolio-header pre, #portfolio-header a, #portfolio-header abbr, #portfolio-header acronym, #portfolio-header address, #portfolio-header code, #portfolio-header del, #portfolio-header dfn, #portfolio-header em, #portfolio-header img, #portfolio-header dl, #portfolio-header dt, #portfolio-header dd, #portfolio-header ol, #portfolio-header ul, #portfolio-header li, #portfolio-header fieldset, #portfolio-header form, #portfolio-header input, #portfolio-header label, #portfolio-header legend, #portfolio-header caption, #portfolio-header tbody, #portfolio-header tfoot, #portfolio-header thead, #portfolio-header tr { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; }
+#portfolio-header blockquote, #portfolio-header q { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; quotes: "" ""; }
+#portfolio-header blockquote:before, #portfolio-header blockquote:after, #portfolio-header q:before, #portfolio-header q:after { content: ""; }
+#portfolio-header th, #portfolio-header td, #portfolio-header caption { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; text-align: left; font-weight: normal; vertical-align: middle; }
+#portfolio-header table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+#portfolio-header a img { border: none; }
+#portfolio-header li { list-style-type: none; }
+#portfolio-header *:focus { outline: 0; }
+#portfolio-header #portfolio-logo { margin: 20px 0 15px 25px; float: left; }
+#portfolio-header ul#portfolio-account-nav, #portfolio-header ul#portfolio-section-nav { list-style-type: none; overflow: hidden; display: inline-block; float: right; margin-top: 30px; padding: 10px; }
+#portfolio-header ul#portfolio-account-nav, #portfolio-header ul#portfolio-section-nav { display: block; }
+#portfolio-header ul#portfolio-account-nav li, #portfolio-header ul#portfolio-section-nav li { float: left; margin-left: 10px; }
+#portfolio-header ul#portfolio-account-nav li:first-child, #portfolio-header ul#portfolio-section-nav li:first-child { margin-left: 0; }
+#portfolio-header ul#portfolio-account-nav li, #portfolio-header ul#portfolio-section-nav li { border-left-style: solid; border-left-width: 2px; border-left-color: #494573; padding-left: 10px; font-size: 16px; }
+#portfolio-header ul#portfolio-account-nav li:first-child, #portfolio-header ul#portfolio-section-nav li:first-child { border-left: none; padding-left: 0; }
+#portfolio-header ul#portfolio-account-nav li#portfolio-header-link-login, #portfolio-header ul#portfolio-section-nav li#portfolio-header-link-login { border: none; margin-left: 0; padding-left: 0; }
+#portfolio-header ul#portfolio-account-nav li a, #portfolio-header ul#portfolio-section-nav li a { color: #c9c3e6; text-decoration: none; font-weight: normal; }
+#portfolio-header ul#portfolio-account-nav li a:hover, #portfolio-header ul#portfolio-section-nav li a:hover { color: white; }
+#portfolio-header ul#portfolio-account-nav li a.active, #portfolio-header ul#portfolio-section-nav li a.active { color: #bff740; }
+#portfolio-header ul#portfolio-account-nav li a.active:hover, #portfolio-header ul#portfolio-section-nav li a.active:hover { color: #bff740; }
+#portfolio-header ul#portfolio-account-nav { background-color: #231d40; padding-left: 15px; padding-right: 15px; margin-right: 25px; margin-left: 10px; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+#portfolio-header ul#portfolio-account-nav li a { color: #45a4ff; }
+#portfolio-header ul#portfolio-account-nav li a:hover { color: #74d0f4; }
+#portfolio-header ul#portfolio-account-nav li a.active { color: #bff740; }
+#portfolio-header ul#portfolio-account-nav li a.active:hover { color: #bff740; }
+
+/* footer */
+
+#portfolio-footer { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; clear: both; overflow: hidden; display: inline-block; font-size: 14px; line-height: 18px; text-align: center; padding-bottom: 40px; color: #555555; min-width: 1044px; }
+#portfolio-footer div, #portfolio-footer span, #portfolio-footer object, #portfolio-footer iframe, #portfolio-footer h1, #portfolio-footer h2, #portfolio-footer h3, #portfolio-footer h4, #portfolio-footer h5, #portfolio-footer h6, #portfolio-footer p, #portfolio-footer pre, #portfolio-footer a, #portfolio-footer abbr, #portfolio-footer acronym, #portfolio-footer address, #portfolio-footer code, #portfolio-footer del, #portfolio-footer dfn, #portfolio-footer em, #portfolio-footer img, #portfolio-footer dl, #portfolio-footer dt, #portfolio-footer dd, #portfolio-footer ol, #portfolio-footer ul, #portfolio-footer li, #portfolio-footer fieldset, #portfolio-footer form, #portfolio-footer input, #portfolio-footer label, #portfolio-footer legend, #portfolio-footer caption, #portfolio-footer tbody, #portfolio-footer tfoot, #portfolio-footer thead, #portfolio-footer tr { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; }
+#portfolio-footer blockquote, #portfolio-footer q { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; quotes: "" ""; }
+#portfolio-footer blockquote:before, #portfolio-footer blockquote:after, #portfolio-footer q:before, #portfolio-footer q:after { content: ""; }
+#portfolio-footer th, #portfolio-footer td, #portfolio-footer caption { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; text-align: left; font-weight: normal; vertical-align: middle; }
+#portfolio-footer table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: arial, helvetica, sans-serif; vertical-align: baseline; border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+#portfolio-footer a img { border: none; }
+#portfolio-footer li { list-style-type: none; }
+#portfolio-footer *:focus { outline: 0; }
+#portfolio-footer { display: block; }
+#portfolio-footer .container { width: 1008px; display: inline-block; margin: 0 auto; padding-top: 9px; padding-right: 18px; padding-left: 18px; text-align: left; }
+#portfolio-footer .container:after { content: " "; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+#portfolio-footer .container { display: block; }
+#portfolio-footer .sixth { width: 132px; padding: 18px; float: left; }
+#portfolio-footer .third { width: 300px; padding: 18px; float: left; }
+#portfolio-footer a { text-decoration: none; color: #555555; }
+#portfolio-footer a:hover { color: #777777; }
+#portfolio-footer h2 { position: absolute; top: -9999em; }
+#portfolio-footer h3 { font-weight: bold; color: gray; padding-bottom: 13px; }
+#portfolio-footer h3 a { color: gray; }
+#portfolio-footer h3 a:hover { color: #a2a2a2; }
+#portfolio-footer #portfolio-footer-pull { text-align: right; }
+
+footer {
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+/* profile */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #000;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* errors */
+
+.field_with_errors {
+  display: table;
+}
+
+.field_with_errors label {
+  color: red;
+}
+
+#error_explanation {
+  width: 98%;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background:#fff6bf;
+  color:#514721;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: decimal;
+}
+
+/* gallery */
+
+h1.gallery {
+  margin-bottom: 0.3em;
+}
+
+table.galleries {
+  margin-top: 1em;
+}
+
+table.galleries tr {
+  height: 70px;
+}
+
+table.galleries tr td.gravatar, table.galleries tr td.photo {
+  border-top: 1px solid #000;
+  vertical-align: top;
+  width: 50px;
+}
+
+.photo img {
+    padding: 4px;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.gravatar {
+    padding: 2px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+table.galleries tr td.gallery {
+  border-top: 1px solid #000;
+  vertical-align: top;
+  color: #938fbf;
+  padding-top: 10px;
+}
+
+table.galleries tr td.gallery span.name {
+  display: block;
+  color: #938fbf;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+table.galleries tr td.gallery span.content {
+  display: block;
+  color: #fff;
+}
+
+table.galleries tr td.gallery span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.galleries {
+  font-size: 80%;
+}
+
+form.new_gallery {
+  margin-bottom: 2em;
+}
+
+form.new_gallery textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
