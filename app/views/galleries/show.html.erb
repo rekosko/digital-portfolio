@@ -1,0 +1,19 @@
+<h1><%= @gallery.name %></h1>
+<p id="notice"><%= notice %></p>
+<div class="field">
+  <table>
+    <tr>
+      <td><%= image_tag @gallery.photo.url(:big) %></td>
+    </tr>
+    <tr>
+      <td><%= label :description, "Opis:" %></td>
+    </tr>
+    <tr>
+      <td><%= @gallery.description %></td>
+    </tr>
+  </table>
+</div>
+
+<br/>
+<!--<%= link_to 'Edit', edit_gallery_path(@gallery) %>-->
+<%= link_to 'Do galerii', galleries_path %>

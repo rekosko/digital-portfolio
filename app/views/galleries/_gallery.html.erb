@@ -1,0 +1,12 @@
+<tr>
+  <td class="photo">
+    <%= image_tag gallery.photo.url(:small) %>
+  </td>
+  <td class="gallery">
+    <span class="name"><%= link_to gallery.name, gallery %></span>
+    <span class="content"><%= gallery.description %></span>
+    <span class="timestamp">
+      Posted <%= time_ago_in_words(gallery.created_at) %> ago.
+    </span>
+  </td>
+</tr>

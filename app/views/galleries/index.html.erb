@@ -1,0 +1,14 @@
+<h1>Galeria</h1>
+
+<table>
+  <tr>
+    <th>Nazwa</th>
+    <th>Opis</th>
+  </tr>
+<% @galleries.each do |gallery| %>
+  <tr>
+    <td width="15%"><%= link_to gallery.name, gallery %></td>
+    <td><%= gallery.description %></td>
+  </tr>
+<% end %>
+</table>
