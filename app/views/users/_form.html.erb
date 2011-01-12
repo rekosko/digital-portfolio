@@ -1,0 +1,43 @@
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+
+  <div class="field">
+    <%= f.label :nickname, "Nick:" %><br />
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :name, "Imię:" %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :surname, "Nazwisko:" %><br />
+    <%= f.text_field :surname %>
+  </div>
+  <div class="field">
+    <%= f.label :password, "Hasło:" %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Powtórz hasło:" %><br />
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="field">
+    <%= f.label :age, "Wiek:" %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :email, "Adres e-mail:" %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :www, "Adres www:" %><br />
+    <%= f.text_field :www %>
+  </div>
+  <div class="field">
+    <%= f.label :description, "O sobie:" %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

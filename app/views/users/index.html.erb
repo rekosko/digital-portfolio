@@ -1,0 +1,15 @@
+<h1>Użytkownicy</h1>
+
+<%= will_paginate %>
+
+<table class="users">
+    <tr>
+      <th>Gravatar</th>
+      <th>Użytkownik</th>
+      <th>Adres e-mail</th>
+    </tr>
+      <%= render @users %>
+</table>
+
+<%= will_paginate %>
+

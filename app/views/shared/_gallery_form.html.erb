@@ -1,0 +1,14 @@
+<%= form_for @gallery, :html => { :multipart => true } do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :name, "Nazwa:" %><br />
+    <%= f.text_field :name %><br />
+    <%= f.label :photo, "Załącznik:" %><br />
+    <%= f.file_field :photo %><br /><br />
+    <%= f.label :description, "Opis:" %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

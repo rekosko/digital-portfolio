@@ -1,0 +1,7 @@
+<% unless @feed_items.empty? %>
+  <h1 class="feed">Ostatnio dodane:</h1>
+  <table class="galleries" summary="User galleries">
+    <%= render :partial => 'shared/feed_item', :collection => @feed_items %>
+  </table>
+  <%= will_paginate @feed_items %>
+<% end %>

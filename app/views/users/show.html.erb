@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <table>
+    <tr>
+      <th>Gravatar</th>
+      <th colspan="2">Dane personalne</th>
+    </tr>
+    <tr>
+      <td class="white" width="12%" valign="top" rowspan="7"><%= gravatar_for @user, :size => 50 %></td>
+      <td width="22%" align="right"><strong>Imię</strong></td>
+      <td align="left"><%= @user.name %></td>
+    </tr>
+    <tr>
+      <td width="22%" align="right"><strong>Nazwisko</strong></td>
+      <td align="left"><%= @user.surname %></td>
+    </tr>
+    <tr>
+      <td width="22%" align="right"><strong>Nick</strong></td>
+      <td align="left"><%= @user.nickname %></td>
+    </tr>
+    <tr>
+      <td width="22%" align="right"><strong>Wiek</strong></td>
+      <td align="left"><%= @user.age %></td>
+    </tr>
+    <tr>
+      <td width="22%" align="right"><strong>E-mail</strong></td>
+      <td align="left"><%= @user.email %></td>
+    </tr>
+    <tr>
+      <td width="22%" align="right"><strong>Adres www</strong></td>
+      <td align="left"><%= @user.www %></td>
+    </tr>
+    <tr>
+      <td width="22%" align="right"><strong>O sobie</strong></td>
+      <td align="left"><%= @user.description %></td>
+    </tr>
+  </table>
+      
+      <p>
+        <%= render 'follow_form' if signed_in? %>
+      </p>
+      
+      <% unless @user.galleries.empty? %>
+        <table class="galleries" summary="User galleries">
+          <%= render @galleries %>
+        </table>
+        <%= will_paginate @galleries %>
+      <% end %>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @user.nickname %><br />
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
+      <strong>Galleries</strong> <%= @user.galleries.count %>
+      <%= render 'shared/stats' %>
+    </td>
+  </tr>
+</table>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+
+
