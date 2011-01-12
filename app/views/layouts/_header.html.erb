@@ -1,0 +1,23 @@
+<div id="portfolio-header">
+    <h5 id="portfolio-logo">
+      <% logo = image_tag("logo.png", :alt => "DigitalPortfolio - Express yourself!", :class => "round") %>
+      <%= link_to logo, root_path %>
+    </h5>
+     <ul id="portfolio-account-nav"> 
+      <div id="portfolio-account-nav-logged_in">
+        <% if signed_in? %>
+        <li><%= link_to "Użytkownicy", users_path %></li>
+        <li><%= link_to "Galeria", galleries_path %></li>
+        <li><%= link_to "Profil", current_user %></li>
+        <li><%= link_to "Ustawienia", edit_user_path(current_user) %></li>
+        <li><%= link_to "Wyloguj", signout_path, :method => :delete %></li>
+        <% else %>
+        <li><%= link_to "Zaloguj", signin_path %></li>
+        <% end %>
+      </div>
+     </ul>
+  <ul id='portfolio-section-nav'>
+    <li><%= link_to "Strona główna", root_path %></li>
+    <li><%= link_to "Kontakt", contact_path %></li>
+  </ul>
+</div>
