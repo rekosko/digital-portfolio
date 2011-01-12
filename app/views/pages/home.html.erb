@@ -1,0 +1,32 @@
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="gallery">Dodaj nowy:</h1>
+        <%= render 'shared/gallery_form' %>
+        <%= render 'shared/feed' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+        <%= render 'shared/stats' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+
+  <h1>Express yourself!</h1>
+
+  <p>
+    Czy wiesz czym jest DigitalPortfolio?<br/><br/>
+    Odpowiedź:
+  <blockquote>
+    Jest miejscem w którym możesz się pokazać innym wstawiając swoje publikacje. 
+    W dodatku możesz śledzić swoich ulubionych użytkowników naszego serwisu.
+  </blockquote>
+    Projekt grupowy na zaliczenie przedmiotu <i>Architektura Serwisów Internetowych</i> 
+    na wydziale MFI Uniwersytetu Gdańskiego. Aby zacząć testować aplikacje prosimy o zarejestrowanie się.
+  </p>
+
+  <%= link_to "Zarejestruj!", signup_path, :class => "signup_button round" %>
+  
+<% end %>
