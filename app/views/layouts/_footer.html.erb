@@ -1,0 +1,33 @@
+<div id='portfolio-footer'>
+  <footer>
+  <div class='container'>
+    <div class='nav sixth'>
+      <h3>nawigacja</h3>
+      <ul>
+        <li><%= link_to "Strona główna", root_path %></li>
+        <li><%= link_to "Kontakt", contact_path %></li>
+        <li><a href="http://news.railstutorial.org/">Rails News</a></li>
+        <li><a href="http://www.railstutorial.org/">Rails Tutorial</a></li>
+      </ul>
+    </div>
+    <div class='nav sixth'>
+      <h3>użytkownik</h3>
+      <ul>
+        <% if signed_in? %>
+        <li><%= link_to "Użytkownicy", users_path %></li>
+        <li><%= link_to "Galeria", galleries_path %></li>
+        <li><%= link_to "Profil", current_user %></li>
+        <li><%= link_to "Ustawienia", edit_user_path(current_user) %></li>
+        <li><%= link_to "Wyloguj", signout_path, :method => :delete %></li>
+        <% else %>
+        <li><%= link_to "Zaloguj", signin_path %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class='third' id='portfolio-footer-pull'>
+      <% logo = image_tag("rails.png", :alt => "Powered by ruby on rails", :class => "round") %>
+      <%= link_to logo, 'http://rubyonrails.org/' %>
+    </div>
+  </div>
+  </footer>
+</div>
